@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            background-image: url('assets/images/bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        section#overlay {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:  center;
+            backdrop-filter: grayscale(10%) blur(8px) brightness(90%);
+        }
+
+        section#overlay aside {
+            width: 350px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.555);
+            text-align: center;
+            position: relative;
+        }
+
+        section#overlay aside h5 {
+            position: absolute;
+            padding: 5px;
+            width: 50px;
+            background-color: #5a9205;
+            color: #fff;
+            font-weight: 700;
+            top: 15px;
+            right: 100%;
+            border-radius: 5px 0 0 5px;
+            box-shadow: -2px 0 5px 0 rgba(255, 255, 255, 0.425);
+        }
+
+        section#overlay aside img {
+            width: 280px;
+            margin-top: -100px;
+        }
+
+        section#overlay aside .inner {
+            padding: 20px;
+        }
+
+        section#overlay aside h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #5a9205;
+        }
+
+        section#overlay aside p {
+            text-align: left;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+            color: #343b04;
+        }
+
+        section#overlay aside .priceSec {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        section#overlay aside .priceSec h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #5a9205;
+        }
+
+        section#overlay aside .priceSec h4 del {
+            font-size: 16px;
+            color: #696969;
+        }
+
+        section#overlay aside .priceSec a.btn {
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 20px;
+            color: #fff;
+            background-color: #5a9205;
+            border-radius: 18px;
+            transition: 0.2s all linear;
+        }
+
+        section#overlay aside .priceSec a.btn:hover {
+            background-color: #4d5803;
+        }
+    </style>
+</head>
+<body>
+    <section id="overlay">
+        <aside>
+            <h5>30% OFF</h5>
+            <img src="assets/images/orange.png" alt="" />
+            <div class="inner">
+                <h2>Fresh Orange</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam distinctio numquam eligendi, odit vel ea, quam sint expedita harum non ab eum repellat laboriosam molestiae nobis illo hic adipisci temporibus?</p>
+                <div class="priceSec">
+                    <h4>$35 <del>$50</del></h4>
+                    <a href="" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </aside>
+    </section>
+</body>
+</html>
